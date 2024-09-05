@@ -32,3 +32,15 @@ AFFiNE.use('copilot', {
   },
 })
 ```
+
+
+# Project RoadMap and current restrictions and Caveats:
+
+## Image generation:
+
+Currently AFFiNE uses another endpoint to get images, i've not been able to track this down yet do a custom image generation server, so at this time it's not possible to generate images using AFFiNE ai and this proxy.
+This is on my road map, feel free to reach out if you got any ideas of how to do so.
+
+## Document tips for no limit ai and other necessary configurations
+
+There are some tips on the backend and server side of affine that could be also documented here to help on a fully functional self-hosted solution
