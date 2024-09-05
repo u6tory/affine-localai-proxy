@@ -28,7 +28,7 @@ Add the folowing lines on the file `/rooot/.affine/self-host/config/affine.js`
 AFFiNE.use('copilot', {
   openai: {
     baseURL: 'http://proxy_ip:port',
-    apiKey: 'some_api_key', 
+    apiKey: 'ANYTHING AT ALL, DONT REMOVE THIS LINE, you may leave it blank though', 
   },
 })
 ```

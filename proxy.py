@@ -28,7 +28,7 @@ api_config = ApiConfig(
 app = FastAPI()
 
 # Extract configuration from the api_config object
-API_ENDPOINT = api_config.llm_api_endpoint
+API_ENDPOINT = str(api_config.llm_api_endpoint)
 MODEL = api_config.default_model
 API_KEY = api_config.api_key
 OVERWRITE_SYSTEM_PROMPT = api_config.overwrite_system_prompt
