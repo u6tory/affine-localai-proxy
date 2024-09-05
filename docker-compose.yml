@@ -1,5 +1,6 @@
 services:
   affine_ai_proxy:
+    restart: "unless-stopped"
     build:
       context: .
       dockerfile: Dockerfile
