@@ -19,3 +19,16 @@ APPEND_SYSTEM_PROMPT="" # if set(and OVERWRITE_SYSTEM_PROMPT not) it will append
 ```bash
 docker compose up -d
 ```
+
+## 3. Change AFFiNE to use the API
+
+Add the folowing lines on the file `/rooot/.affine/self-host/config/affine.js`
+
+```js
+AFFiNE.use('copilot', {
+  openai: {
+    baseURL: 'http://proxy_ip:port',
+    apiKey: 'some_api_key', 
+  },
+})
+```
