@@ -1,0 +1,15 @@
+services:
+  affine_ai_proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4242:4242"
+    environment:
+      - LLM_API_ENDPOINT=${LLM_API_ENDPOINT:-http://host.docker.internal:11434/v1/chat/completions}
+      - DEFAULT_MODEL=${DEFAULT_MODEL:-llava}
+      - API_KEY=${API_KEY}
+      - OVERWRITE_SYSTEM_PROMPT=${OVERWRITE_SYSTEM_PROMPT}
+      - APPEND_SYSTEM_PROMPT=${APPEND_SYSTEM_PROMPT}
+    env_file:
+      - .env
