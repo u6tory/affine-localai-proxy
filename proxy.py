@@ -3,7 +3,9 @@ from fastapi.responses import StreamingResponse
 import httpx
 import json
 import os
-from pydantic import BaseModel, HttpUrl, Optional
+from pydantic import BaseModel, HttpUrl
+from typing import Optional
+
 
 # Define the ApiConfig model
 class ApiConfig(BaseModel):
