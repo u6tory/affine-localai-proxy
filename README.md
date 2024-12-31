@@ -22,7 +22,7 @@ docker compose up -d
 
 ## 3. Change AFFiNE to use the API
 
-Add the folowing lines on the file `/rooot/.affine/self-host/config/affine.js`
+Add the folowing lines on the file `/root/.affine/self-host/config/affine.js`
 
 ```js
 AFFiNE.use('copilot', {
