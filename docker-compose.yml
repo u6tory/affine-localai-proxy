@@ -13,4 +13,4 @@ services:
       - OVERWRITE_SYSTEM_PROMPT=${OVERWRITE_SYSTEM_PROMPT}
       - APPEND_SYSTEM_PROMPT=${APPEND_SYSTEM_PROMPT}
     env_file:
-      - .env
+      - stack.env
